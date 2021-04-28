@@ -1,0 +1,31 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.images {
+    display: flex;
+    gap: 1rem;
+    background-color: bisque;
+    padding: 1rem;
+}
+
+.stats {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
