@@ -17,9 +17,6 @@ Review the Submission Instructions for guidance on completing and submitting thi
 
 ### Videos
 
-- Optional: [Hero Icons](https://www.youtube.com/watch?v=cVa1UiKPJN8){:target="_blank"}
-
 ### Bookmark/Skim
 
 - Review (Optional): [React - Comprehensive Guide](https://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/){:target="_blank"}
-- Optional: [Heroicons](https://heroicons.com/){:target="_blank"}

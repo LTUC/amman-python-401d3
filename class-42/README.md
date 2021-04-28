@@ -1,6 +1,14 @@
-# Pythonisms
+# Tying it All Together
 
-Python has a broad set of modules and idioms that together enable the "pythonic" way.
+It's time to put the "full" in full stack.
+
+We're going to deploy a python API hosted as a container.
+
+We're going to deploy a relational database at a whole different location.
+
+We're going to deploy a JS/HTML/CSS web app somewhere else entirely.
+
+Then we're going to make them all work together in Full Stack harmony.
 
 ## Learning Objectives
 
@@ -8,15 +16,13 @@ Python has a broad set of modules and idioms that together enable the "pythonic"
 
 #### Describe and Define
 
-- Generators
-- Iterators
-- Magic methods
+- Managed databases
+- Container hosting
+- Monolith vs. Microservice
 
 #### Execute
 
-- Decorate a function.
-- Improve custom data structures to support operations that match built in data structures.
-<!--- Add Python 3.8 features-->
+- Stitching it all together.
 
 <!--## Today's Outline-->
 

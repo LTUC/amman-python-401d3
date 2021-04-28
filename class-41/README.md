@@ -9,7 +9,7 @@ It's time to go live!
 #### Describe and Define
 
 - Evaluate different hosting options.
-- Repeat stories about deployment in the bad old days
+- Evaluate Styling options.
 
 #### Execute
 

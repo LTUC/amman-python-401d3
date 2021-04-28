@@ -6,8 +6,10 @@ Review the Submission Instructions for guidance on completing and submitting thi
 
 ## Reading
 
+- [Next.js - Data Fetching](https://nextjs.org/learn/basics/data-fetching){:target="_blank"}
 - [Next.js - Dynamic Routes](https://nextjs.org/learn/basics/dynamic-routes){:target="_blank"}
 - [Next.js - Deployment](https://nextjs.org/learn/basics/deploying-nextjs-app){:target="_blank"}
+
 
 ## Additional Resources
 

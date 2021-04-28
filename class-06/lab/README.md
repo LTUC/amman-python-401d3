@@ -43,6 +43,7 @@ Create `tests/test_game_logic.py` file.
   - A sequence of correct length is returned
   - Each item in sequence is an integer with value between 1 and 6
 
+
 ### Testing - Calculate Score
 
 - zilch - non scoring roll should return 0

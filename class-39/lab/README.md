@@ -1,61 +1,46 @@
-# Lab: Cookie Stand Admin Version 3
+# Lab: React III - Next.js
 
 ## Overview
 
-Your job is to continue work on `Cookie Stand Admin` app using [Next.js](https://nextjs.org/){:target="_blank"} and style using [Tailwind CSS](https://tailwindcss.com/){:target="_blank"}.
+Build a multi page web app using Next.js to consume an external API.
 
-But now you'll be working with data from a remote API!
-
-## Annoying Change Explanation
-
-The component names have changed slightly since last version. That is intentional. The concepts should map over from previous lab. E.g. `<Header> --> <CookieStandHeader>`. There's a reason for this, and it's not to pester you!
-
-Also, the layout of Cookie Stand Form has changed a bit. This WILL happen all the time as devs. We may as well get used to it now.
+The app will display most recent XKCD comic and have links to previous 10 comics.
 
 ## Feature Tasks and Requirements
 
-- All features from versions 1 an 2 should be complete.
-- The `specs` for lab are screen shots [Cookie Stand Admin Version 3](./cookie-stand-admin-version-3.png){:target="_blank"} and [Cookie Stand Admin Login](./cookie-stand-admin-login.png){:target="_blank"}
-- `pages/Index.js` should export a `<Home>` component.
-- `<Home>` requirements
-  - If user is NOT logged in then `<LoginForm>` should render.
-  - If user IS logged in then `<CookieStandAdmin>` component should render.
-- `<LoginForm>` requirements
-  - Should receive a function passed in to call when form is submitted.
-  - The function should be called with `username` and `password` arguments.
-- `<CookieStandAdmin>` requirements
-  - When user fills out form to add location then the data should be posted to API
-  - While waiting for API response the `<CookieStandTable>` should render the new row in a pending state.
-  - When API response is complete then `<CookieStandTable>` should render latest data.
-- `<CookieStandTable>` requirements
-  - Component should continue to display Cookie Stand info as in version 2
-  - Add a `delete` icon in each stand's location cell.
-  - Clicking `delete` icon should immediately delete the Cookie Stand.
-  - API should be informed that Cookie Stand was deleted.
-- Continue to style all components using TailwindCSS utility classes to match spec.
+- Refer to [example site](https://xkcd-smoky.vercel.app/){:target="_blank"}
+- Web app should have 2 static routes
+  - Home page at "/"
+  - About page at "/about"
+- Web app should have dynamic routes
+  - Dynamic route should display a single comic
 
 ## Implementation Notes
 
-- Continue work in `cookie-stand-admin` repository
-- You will be supplied with an API URL by instructor
-- You will be supplied a username/password to use API
-- **IMPORTANT** Complete version 1 & 2 tasks before moving on to version 3 features.
-- Pro tip: [Tailwind CSS Extension Pack](https://marketplace.visualstudio.com/items?itemName=andrewmcodes.tailwindcss-extension-pack){:target="_blank"}
-
-### User Acceptance Tests
-
-No testing required.
-
-## Configuration
-
-Continue work in `cookie-stand-admin` repository in Github
-
-Refer to [Lab Submission Instructions](../../../reference/submission-instructions/labs/){:target="_blank"} for detailed instructions.
+- Refer to [XKCD API](https://xkcd.com/json.html){:target="_blank"}
+  - Inspect the data returned to determine the dynamic links needed.
+- `basic-css` is a good, stripped down, starter template.
 
 ### Stretch Goals
 
-- Use your own API instead of supplied one.
-- Add a confirmation dialog when deleting a Cookie Stand.
-- Add a list of Cookie Stand locations to `Overview` page.
-  - There is some trickiness here regarding logged in status. Try to figure it out!
-- Add `edit` feature.
+- Make a "hybrid" app where Home and About pages are statically generated
+- Style using Sass instead of CSS
+- Publish web app to the web
+- Use alternate http client instead of axios
+- HINT: check Next.js blog for help with the stretch goals
+
+### Useful Terminal Commands
+
+- `npx create-next-app`
+  - Alternate style:  `npm install react react-dom next`
+- `npm run dev`
+
+### User Acceptance Tests
+
+No automated testing today. Your goal is to match appearance and functionality of reference web app.
+
+## Configuration
+
+- Create Github repository named `daily-xkcd`
+- Submit pull request to completed project.
+- Don't forget to add `node_modules` and `.next` folders to `.gitignore`

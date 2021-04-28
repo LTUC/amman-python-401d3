@@ -10,71 +10,52 @@ Once you are confident that your Application is *deployable` then time to resear
 
 ## Feature Tasks and Requirements
 
-### Use API Quick Start Template
+- **NOTE**: You can use previous lab's Application as a starting point or start from scratch.
+- Modify your application to store SECRET_KEY, ALLOWED_HOSTS, DEBUG and DATABASE information in `.env` file.
+- All the code changes will be in `settings.py` so check the demo code for Env related lines.
 
-- Create a new repo `cookie-stand-api` that uses [API Quick Start](https://github.com/codefellows/python-401-api-quickstart){:target="_blank"} as a template.
-- Modify your application using instructions in README.md found in root of repo.
-  - Change `things` app folder to be `cookie_stands`
-  - Go through code base looking for `Thing`,`thing` and `things` change to cookie-stand related names.
-  - E.g. `Thing` model becomes `CookieStand`
-  - E.g. `ThingList` becomes `CookieStandList`
-- Pro Tip: Do a global text search looking for `thing`
-  - Search should be case insensitive.
+### In a nutshell - make your own Application similar to the demo, and put it on the web
 
-### Deeper CookieStand Changes
+## Stretch Goals
 
-- The `CookieStand` model must contain
+- Add CORS headers using [django-cors-headers](https://github.com/adamchainz/django-cors-headers){:target="_blank"}
+- Whitelist allowed origins
+- Handling collecting static files so that browsable API renders nicely.
+- Host database in a location other than where Django site is hosted.
 
-```python
-    location = models.CharField(max_length=256)
-    owner = models.ForeignKey(
-        get_user_model(), on_delete=models.CASCADE, null=True, blank=True
-    )
-    description = models.TextField(default="", null=True, blank=True)
-    hourly_sales = models.JSONField(default=list, blank=True)
-    minimum_customers_per_hour = models.IntegerField(default=0)
-    maximum_customers_per_hour = models.IntegerField(default=0)
-    average_cookies_per_sale = models.FloatField(default=0)
-```
+## Deployment Requirements
 
-Notice the use of [JSONField](https://docs.djangoproject.com/en/3.1/ref/models/fields/#jsonfield){:target="_blank"} which is a newer feature introduced in Django 3.1.
+- Research web hosting sites capable of working with Docker
+- **NOTE** no money is required for this lab but you may choose to create a trial account.
+  - But you are responsible for making sure you don't hit with charges when trial is complete.
 
-### Database Deployment Requirements
+## Implementation Notes
 
-- Host your Database at [ElephantSQL](https://www.elephantsql.com/){:target="_blank"}
-
-### Site Deployment Requirements
-
-- Deploy Docker container to Heroku
-
-### Stretch Goals
-
-- Add functionality so that when a JSON array of hourly_sales is not provided at creation time it will be generated with random numbers based on minimum/maximum customers per hour and average cookies per sale.
-- Deploy site with alternate provider. E.g. Digital Ocean, Azure or AWS.
-
-### Implementation Notes
-
-- Site must use environment variables.
+- You are not required to use Poetry since the requirements.txt is being supplied.
+- *However* if you run into issues with supplied requirements.txt then you are responsible for rebuilding.
+- You are NOT required to use Database from an external source, but it's nice if you do.
+- You ARE required to have Database settings read from environment variables.
 
 ### Useful Terminal Commands
 
 - `docker-compose up --build`
 - `docker-compose down`
 - `docker-compose restart`
-- `docker-compose run web python manage.py migrate`
-- `docker-compose run web python manage.py collectstatic`
+- `docker-compose exec web ./manage.py migrate`
+- `docker-compose exec web ./manage.py collectstatic`
 
 ## User Acceptance Tests
 
-- Manually confirm API using API Tester, Postman or HTTPie.
-  - Remember to use deployed url, not localhost
+- Manually confirm API using Postman/HTTPie.
+  - Remember to use deployed url for postman requests.
 
-## Submission Requirements
+## Configuration
 
-- Make sure a user exists in Database
-  - E.g. `createsuperuser` has been run
-- Include user name and password in Canvas submission
-- Include deployed URL in Canvas submission
-- Grader will use `api_tester` with provided username, password and url to test.
+- Create `drf-api-deploy` repository on Github
+
+## Submission Notes
+
+- Include .env values in your Canvas submission
+
 
 Refer to [Lab Submission Instructions](../../../reference/submission-instructions/labs/){:target="_blank"} for detailed instructions.

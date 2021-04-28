@@ -8,7 +8,6 @@ def test_help():
     expected = "Instantiate a Guesser then guess things"
     assert actual == expected
 
-
 def test_beginners_luck():
 
     counter = 0
@@ -35,6 +34,7 @@ def test_beginners_luck():
     def mock_input(*args, **kwargs):
         return "green"
 
+
     old_print = builtins.print
     builtins.print = mock_print
 
@@ -47,7 +47,6 @@ def test_beginners_luck():
 
     builtins.print = old_print
     builtins.input = old_input
-
 
 def test_third_times_the_charm():
 
@@ -80,14 +79,15 @@ def test_third_times_the_charm():
 
 
 def test_guess_number():
-    prints = ["I am thinking of number between 1 and 5", "Nope, try again"]
+    prints = ["I am thinking of number between 1 and 5","Nope, try again"]
     prompts = ["What number am I thinking of?"]
     responses = ["1"]
+
 
     IOTesterWithNums.test(prints, prompts, responses)
 
 
-class IOTester:
+class IOTester():
     def __init__(self, prints, prompts, responses):
         self.prints = prints
         self.prompts = prompts
@@ -120,11 +120,11 @@ class IOTester:
         assert self.prints == []
         assert self.prompts == []
         assert self.responses == []
-
-
 class IOTesterWithNums(IOTester):
+
     def mock_get_random_num(self):
         return self.responses.pop(0)
+
 
     @staticmethod
     def test(prints, prompts, responses):

@@ -1,10 +1,6 @@
-# Data Fetching / Authentication
+# Next.js
 
-It's time to wire up the Cookie Stand Admin site to an API full of cookie stand data.
-
-But not only will you need to fetch the data, you'll need to authenticate your API requests.
-
-For those tasks you'll need an http client, the ability to handle JSON Web Tokens and a robust way to manage the data.
+Next.js is a framework that builds on top of React and can streamline many aspects of React development.
 
 ## Learning Objectives
 
@@ -12,16 +8,17 @@ For those tasks you'll need an http client, the ability to handle JSON Web Token
 
 #### Describe and Define
 
-- axios http client
-- JSON Web Tokens
-- Stale While Revalidate data fetching/caching.
+- Pre-Rendering
+- CSS-in-JS
+- Static Site Generation
 
 #### Execute
 
-- Log in to a remote API
-- Fetch  API access tokens
-- Handle data updates in a performant way
+- Create a Next.js powered application
+- Navigate to dynamically generated pages
+- Use shared components for layout
+- Fetch data at build time and run time
 
-<!-- ## Today's Outline -->
+## Today's Outline
 
 <!-- To Be Completed By Instructor -->

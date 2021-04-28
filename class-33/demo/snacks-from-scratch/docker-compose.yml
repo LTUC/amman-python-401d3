@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    # new for class 33
+    command: gunicorn snacks_project.wsgi:application --bind 0.0.0.0:8000 --workers 4
+    volumes:
+      - .:/code
+    ports:
+      - 8000:8000

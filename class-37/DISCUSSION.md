@@ -4,16 +4,9 @@ Below you will find some reading material, code samples, and some additional res
 
 Review the Submission Instructions for guidance on completing and submitting this assignment.
 
-## NOTE:
-
-There's a fair amount to read/watch here. So give everything at least a skim and plan on referring back to it later as we learn these new tools.
-
-## ES6 Overview
+## Reading
 
 - [ES6 Syntax and Feature Overview](https://www.taniarascia.com/es6-syntax-and-feature-overview/){:target="_blank"}
-
-## React 
-
 - [React - Hello World](https://reactjs.org/docs/hello-world.html){:target="_blank"}
 - [React - JSX](https://reactjs.org/docs/introducing-jsx.html){:target="blank"}
 - [React - Rendering Elements](https://reactjs.org/docs/rendering-elements.html){:target="blank"}
@@ -21,13 +14,14 @@ There's a fair amount to read/watch here. So give everything at least a skim and
 - [React - State & Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html){:target="blank"}
 - [React - Handling Events](https://reactjs.org/docs/handling-events.html){:target="blank"}
 
-## Tailwind CSS
+## Additional Resources
 
-- [Utility First CSS](https://tailwindcss.com/docs/utility-first){:target="blank"}
-- [Tailwind in 15 minutes](https://www.youtube.com/watch?v=6zIuAyLZPH0){:target="blank"}
+### Videos
 
-## Next.js
+### Bookmark/Skim
 
-- [Learn Next.js](https://nextjs.org/learn/basics/create-nextjs-app){:target="blank"}
-- [Why to use Next.js](https://www.youtube.com/watch?v=rtgbaKBhdkk){:target="blank"}
+- [React - Installation](https://reactjs.org/docs/create-a-new-react-app.html){:target="_blank"}
+- (Optional): [React - Comprehensive Guide](https://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/){:target="_blank"}
 
+
+- [Understanding Variables, Scope, and Hoisting in JavaScript](https://www.digitalocean.com/community/tutorials/understanding-variables-scope-hoisting-in-javascript){:target="_blank"}

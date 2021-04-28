@@ -1,65 +1,53 @@
-# Lab: Cookie Stand Admin Version 2
+# Lab: React 2
 
 ## Overview
 
-Your job is to continue work on `Cookie Stand Admin` app using [Next.js](https://nextjs.org/){:target="_blank"} and style using [Tailwind CSS](https://tailwindcss.com/){:target="_blank"}.
+- Create a ReactJS web application that displays a list of things, and allows creating new things.
 
 ## Feature Tasks and Requirements
 
-- The `specs` for lab are screen shots [Cookie Stand Admin Version 2](./cookie-stand-admin-version-2.png){:target="_blank"} and [Cookie Stand Admin No Stands](./cookie-stand-admin-no-stands.png){:target="_blank"}
-- `pages/Index.js` should return top level component `<CookieStandAdmin>`
-- `<CookieStandAdmin>` details...
-  - Have a `<Head>` component.
-  - Have a custom `<Header>` component that matches spec.
-  - Have a `<main>` component.
-  - Within `<main>` have custom `<CreateForm>` and `<ReportTable>` components.
-  - Have a custom `<Footer>` component that matches spec.
-  - Import time slot data from supplied `data.js` file.
-- `<Head>` should set page title `Cookie Stand Admin`
-- `<Header>` component should have Next `<Link>` to `overview` page.
-- `<CreateForm>` component details...
-  - Receive an `onCreate` function to be called when form is submitted.
-  - `onCreate` should be passed argument object representing new cookie stand.
-    - Object should have `location` property.
-    - Object should have `hourly_sales` property with hard coded `[48, 42, 30, 24, 42, 24, 36, 42, 42, 48, 36, 42, 24, 36]`
-- `<ReportTable>` details...
-  - should receive `hours` on props that is an array cookie stand hours of operation.
-  - should receive `reports` on props that is an array all cookie stand objects.
-  - If `reports` is empty then render `<h2>No Cookie Stands Available</h2>`
-  - If `reports` is not empty then render a `table` with `thead`,`tbody` and `tfoot` components.
-  - Component should render to match spec.
-  - Component is responsible for tallying totals for each cookie stand as well as all cookie stands per hourly slot.
-- `<Footer>` component details...
-  - Should receive `reports` array on props.
-  - Should display `X Locations World Wide` where `X` is number of cookie stands.
-- `<Header>`,`<Footer>`,`<CreateForm>` and `<ReportTable>` should each be in own file inside top level `components` folder.
-- Those components should be imported into `Index.js`
-- `Overview` page details...
-- should live in `pages/overview.js`
-- should render `<Link href="/"><a>Return to Main page</a></Link>`
-- Style all components using TailwindCSS utility classes to match spec.
+- Create a web app with a top level `App` component
+  - `App` component should...
+    - have `thingList` data stored in its state.
+    - render 3 nested components
+      - `Header`
+      - `ThingList`
+      - `Footer`
+  - `thingList` should be an array of plain old JavaScript objects (aka POJO) that represent a thing that has a name.
+    - E.g. {name:'rake'}
+  - `Header` component should...
+    - receive a `things count` as a prop
+    - display a heading
+    - display the current count of things
+  - `ThingList` component should...
+    - receive a `list of things` as a prop
+    - receive a function to call when a new `thing` is created.
+    - Display an unordered list composed of `ThingItem` components
+    - Display a form that allows creation of a `thing`
+    - When user creates new `thing` the rest of application should update appropriately.
+      - `Header` thing count should update
+      - `ThingList` should add a new `ThingItem` to end of list
+  - `ThingItem` component should...
+    - receive a `name` as a prop
+  - `Footer` component should...
+    - Display some placeholder text (e.g. lorem ipsum)
 
 ## Implementation Notes
 
-- Continue work in `cookie-stand-admin` repository
-- **IMPORTANT** Complete version 1 tasks before moving to version 2 features.
-- Pro tip: [Tailwind CSS Extension Pack](https://marketplace.visualstudio.com/items?itemName=andrewmcodes.tailwindcss-extension-pack){:target="_blank"}
+- `npx create-react-app thing-creator`
+- follow terminal instructions
+
+## Stretch Goals
+
+- read in `things` data from an external JSON file
+- Use a hooks based form
 
 ### User Acceptance Tests
 
-No testing required.
+No acceptance tests required
 
 ## Configuration
 
-Continue work in `cookie-stand-admin` repository in Github
+- create `react-things` repository on Github
 
 Refer to [Lab Submission Instructions](../../../reference/submission-instructions/labs/){:target="_blank"} for detailed instructions.
-
-### Stretch Goals
-
-- Flesh out `Overview` page to do more
-- Remove hard coding from `<CreateForm>` and properly calculate hourly sales per cookie stand.
-- Add delete icons.
-  - Pro Tip: [Heroicons](https://heroicons.com/){:target="_blank"}
-- Really stretch out and make delete icons functional.
-- Persist Cookie Stand data.

@@ -14,29 +14,32 @@ The Vercel platform was built by creators of Next.js so it's bound to be good.
 - Deploy your Next.js app.
   - An app you build fresh just for this lab.
   - The app you built for previous lab.
-  - Convert one of your "vanilla" React app's to Next.js
+  - Convert one of your "vanilla" React app's to Next.js 
   - Really, anything.
   - As long as you created it with Next.js
 
 ## Implementation Notes
 
 - You'll need a Vercel account and to link it to Github.
-  - The Deployment instructions above will walk you through it.
+  - The Deployment instructions above will walk you through it. 
 
 ### Stretch Goals
 
 - Hook up Next.js app with your Django Rest Framework API.
 - Deploy a preview build (include URL in README)
-- Use a competing host.
+- Try different styling libraries, e.g. [TailwindCSS](https://tailwindcss.com/){:target="_blank"}
+- Use Sass instead of CSS
+
+
 
 ### User Acceptance Tests
 
-No automated testing today.
+No automated testing today. 
 
 ## Configuration
 
 - Create Github repository with your choice of name
-  - Choose something you like because it will be the default name of your deployed app.
+  - Choose something you like because it will be the default name of your deployed app. 
 - Submit pull request to completed project.
 - Customize README.md for your app.
-  - Include deployed URL in README
+  - Include deployed URL in README 
