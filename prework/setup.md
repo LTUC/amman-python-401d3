@@ -86,12 +86,12 @@ Oh My Zsh is a very handy and powerful tool. Checkout the [Cheat Sheet](https://
 - WSL/Linux
   - `brew install bzip2 libffi libxml2 libxmlsec1 openssl readline sqlite xz zlib`
 - `brew install pyenv`
-- `pyenv install 3.8.5`
+- `pyenv install 3.9.4`
   - This command downloads and builds Python interpreter
   - In case of failure
     - WSL/Linux: Refer to [Pyenv Common Problems](https://github.com/pyenv/pyenv/wiki/Common-build-problems){:target="_blank"} and run the `apt-get` command at top of page under the **Ubuntu/Debian** section.
     - Mac: Make sure the Mac specific steps above were followed.
-- `pyenv global 3.8.5`
+- `pyenv global 3.9.4`
 - `python --version`
   - If error then restart terminal
 - `brew install poetry`
