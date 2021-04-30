@@ -103,7 +103,16 @@ Oh My Zsh is a very handy and powerful tool. Checkout the [Cheat Sheet](https://
 - `poetry install`
 - `poerty add matplotlib jupyterlab`
 - `pytest`
-- `nvm --version`
+- `brew install nvm`
+  - If this fails you can install nvm by runinng:
+  ```bash
+  curl -sL https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh -o install_nvm.sh
+  
+  bash install_nvm.sh
+  ```
+  - Then replace you [.profile with this one](./.profile) and run `source ~/.profile`
+  - `nvm --version`
+
 
 If no commands failed then you're all done.
 

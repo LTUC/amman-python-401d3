@@ -27,11 +27,11 @@ Allow yourself more time than you think you will need so that you can take break
 **Note**: you may have completed these steps in earlier course
   
 1. Setup your computer with Git, Canvas and Slack
-  - [Set Up Accounts](https://codefellows.github.io/common_curriculum/prep_work/Setup_Your_Accounts){:target="_blank"}
-    - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git){:target="_blank"}
+  - [Set Up Accounts](https://codefellows.github.io/common_curriculum/prep_work/Setup_Your_Accounts)
+    - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 1. Set up your tools
-  - [Interpreter & Terminal](./setup){:target="_blank"}
-1. Install [VS Code](https://code.visualstudio.com/){:target="_blank"}
+  - [Interpreter & Terminal](./setup)
+1. Install [VS Code](https://code.visualstudio.com/)
     - Install the Python language extension.
     - Should show as an option on right of screen when you launch.
 
@@ -41,6 +41,6 @@ Having a level of comfort with the basic skills you’ll be using every day is v
 
 The additional materials below are a requirement for beginning the Code-401 Python course. You will be severely hindered if you're unable to complete the work before the course begins, so ensure that you provide yourself with at least one week. The longer you have for practice, the better!
 
-- [Prework - Python, HTML, CSS, JS](./prework-python-html){:target="_blank"}
-- [Prework - The Command Line](https://codefellows.github.io/common_curriculum/prep_work/Terminal){:target="_blank"}
-- [Prework - Mindset](https://codefellows.github.io/common_curriculum/prep_work/Mindset){:target="_blank"}
+- [Prework - Python, HTML, CSS, JS](./prework-python-html)
+- [Prework - The Command Line](https://codefellows.github.io/common_curriculum/prep_work/Terminal)
+- [Prework - Mindset](https://codefellows.github.io/common_curriculum/prep_work/Mindset)
