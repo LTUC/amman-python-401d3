@@ -101,7 +101,11 @@ Oh My Zsh is a very handy and powerful tool. Checkout the [Cheat Sheet](https://
 - `cd python-fun`
 - `poetry shell`
 - `poetry install`
+- `poerty add matplotlib jupyterlab`
 - `pytest`
 - `nvm --version`
+-  jupyter lab
+
+Open the url in the brower and create a new notebook. Test with any sample python code.
 
 If no commands failed then you're all done.
