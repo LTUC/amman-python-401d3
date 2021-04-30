@@ -104,8 +104,20 @@ Oh My Zsh is a very handy and powerful tool. Checkout the [Cheat Sheet](https://
 - `poerty add matplotlib jupyterlab`
 - `pytest`
 - `nvm --version`
--  jupyter lab
-
-Open the url in the brower and create a new notebook. Test with any sample python code.
 
 If no commands failed then you're all done.
+
+## Test Jupyter Notebook and Matlab
+-  `jupyter lab`
+
+Open the url in the brower and create a new notebook. Test with any sample python code:
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.linspace(0, 20, 100)  # Create a list of evenly-spaced numbers over the range
+plt.plot(x, np.sin(x))       # Plot the sine of each x point
+plt.show()                   # Display the plot
+```
+
+
