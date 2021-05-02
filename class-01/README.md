@@ -36,3 +36,15 @@ Introduction to Python Language
 Ensure that you've completed the [401 Python Pre-work](https://codefellows.github.io/code-401-python-guide/curriculum/prework/){:target="_blank"}.
 
 It's extremely critical that you're set up and ready to go on day 1, and if not you need to **notify your instructor** as soon as possible regarding any of the pre-work that you were unable to complete.
+
+Terms
+
+Terminal -  In Client Server Architecture we had slow computers called terminals or dumb terminals that provided a keyboard (standard input) and a screen (standard out) for communicating the users commands to the server which did the actual work.
+We use the term terminal to refer to a GUI program that runs a command line shell.
+
+Interpreter - Program that executes a programming language without requiring the source code to be compiled.
+ex.
+- node
+- python
+- php
+- bash / sh/ zsh
