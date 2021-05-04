@@ -95,14 +95,6 @@ Oh My Zsh is a very handy and powerful tool. Checkout the [Cheat Sheet](https://
 - `python --version`
   - If error then restart terminal
 - `brew install poetry`
-- `poetry config virtualenvs.in-project true`
-  - If error then restart terminal
-- `poetry new python-fun`
-- `cd python-fun`
-- `poetry shell`
-- `poetry install`
-- `poerty add matplotlib jupyterlab`
-- `pytest`
 - `brew install nvm`
   - If this fails you can install nvm by runinng:
   ```bash
@@ -112,6 +104,15 @@ Oh My Zsh is a very handy and powerful tool. Checkout the [Cheat Sheet](https://
   ```
   - Then replace you [.profile with this one](./.profile) and run `source ~/.profile`
   - `nvm --version`
+- `poetry config virtualenvs.in-project true`
+  - If error then restart terminal
+- `poetry new python-fun`
+- `cd python-fun`
+- `poetry shell`
+- `poetry install`
+- `poetry add matplotlib jupyterlab`
+- `pytest`
+
 
 
 If no commands failed then you're all done.
