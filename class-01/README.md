@@ -25,7 +25,6 @@ Introduction to Python Language
 
 ## Today's Outline
 
-<!-- To Be Completed By Instructor -->
 - Kick-off and Introductions
 - Course Overview
 - Setting up Python and Poetry
