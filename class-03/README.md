@@ -29,8 +29,8 @@ Will also handle exceptions as well as test that they are properly raised.
 
 ## Today's Outline
 
-> Whiteboard lab exercise with student volunteer
-> Feedback
-> Exceptions
-> File I/O
-> Upcoming Lab
+- Whiteboard lab exercise with student volunteer
+- Feedback
+- Exceptions
+- File I/O
+- Upcoming Lab
