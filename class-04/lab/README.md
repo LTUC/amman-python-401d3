@@ -6,7 +6,7 @@ Creating a Garage Band with Object Oriented Programming.
 
 ## Configuration
 
-Use `Poetry` to create your project with name **pythonic-garage-band**
+Use `poetry` to create your project with name **pythonic-garage-band**
 
 ## Repository set-up
 
