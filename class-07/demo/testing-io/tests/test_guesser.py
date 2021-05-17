@@ -1,20 +1,36 @@
 import builtins
+import pytest
+
 from testing_io.guesser import Guesser
 
 
 def test_help():
-    guesser = Guesser()
-    actual = guesser.help()
-    expected = "Instantiate a Guesser then guess things"
-    assert actual == expected
+    def mock_print(*args, **kwargs):
+        actual = args[0]
+        expected = "Instantiate a Guesser then guess things"
+        assert actual == expected
+    # Setup    
+    # Backup out original print function
+    old_print = builtins.print
+    # Swap real implementation for the mock
+    builtins.print = mock_print
 
+    guesser = Guesser()
+    guesser.help()
+
+    # Tear down
+    # Restore original print function
+    builtins.print = old_print
+    # expected = "Instantiate a Guesser then guess things"
+    # assert actual == expected
+
+@pytest.mark.skip
 def test_beginners_luck():
 
     counter = 0
 
     def mock_print(*args, **kwargs):
-
-        nonlocal counter
+        nonlocal counter  
 
         if counter == 0:
             expected = "Step right up and guess my favorite color!"
@@ -27,7 +43,7 @@ def test_beginners_luck():
         old_print(*args, **kwargs)
         old_print("*********")
 
-        actual = args[0]
+        actual = args[0] # assignment in a test RHS SUB
 
         assert actual == expected
 
@@ -48,6 +64,7 @@ def test_beginners_luck():
     builtins.print = old_print
     builtins.input = old_input
 
+@pytest.mark.skip
 def test_third_times_the_charm():
 
     prints = [
@@ -78,6 +95,7 @@ def test_third_times_the_charm():
     io_tester.exit()
 
 
+@pytest.mark.skip
 def test_guess_number():
     prints = ["I am thinking of number between 1 and 5","Nope, try again"]
     prompts = ["What number am I thinking of?"]
