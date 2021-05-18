@@ -20,9 +20,15 @@ For _Game of Greed 3_ we'll be handing cheaters and losers. In other words, peop
 
 ## Today's Outline
 
-- Challenge Review
-- Challenge Preview
 - Lab Review
 - Lab Preview
-- Guided Research
+
 - Demo
+- Guided Research
+
+- Challenge Review
+- Challenge Preview
+
+## Notes
+
+[Notes](./Notes.md)
