@@ -2,10 +2,6 @@
 
 We'll wrap up _Game of Greed 4_ by creating a bot to play against.
 
-## Learning Objectives
-
-### Students will be able to
-
 #### Describe and Define
 
 - Method signatures
@@ -20,10 +16,11 @@ We'll wrap up _Game of Greed 4_ by creating a bot to play against.
 
 ## Today's Outline
 
-<!-- To Be Completed By Instructor -->
-- Challenge Review
-- Challege Preview
-- Lab Review
-- Lab Preview
+- Challenge Review - Hamzh Whiteboard
+- Challenge Preview - reverse a linked list - word reversed
+
 - Guided Research
 - Demo
+
+- Lab Review
+- Lab Preview
