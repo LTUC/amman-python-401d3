@@ -6,7 +6,7 @@ Pandas makes it much simpler to organize tabular data and apply statistical anal
 
 
 ## Learning Objectives
-
+Data analysis techniques with pandas
 ### Students will be able to
 
 #### Describe and Define
