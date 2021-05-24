@@ -6,9 +6,10 @@ Pandas makes it much simpler to organize tabular data and apply statistical anal
 
 
 ## Learning Objectives
-Data analysis techniques with pandas
+Basic familiarity with pandas and dataframes
 ### Students will be able to
-
+Create dataframes from in memory data and from csv files
+Analyse data using dataframes methods
 #### Describe and Define
 
 - Power of Data Frames
@@ -21,4 +22,3 @@ Data analysis techniques with pandas
 - Load external data sets
 - Organize data sets into manageable Data Frames
 - Create notebooks that clearly express user findings in professional manner
-
