@@ -1,3 +1,10 @@
+# Weekly Feedback
+
+- Data Structures Not Helpful
+  - Stacks, Queues and Trees Not Helpful
+- Career Not Helpful
+- Learning Journal Not Helpful
+
 # Intro to Machine Learning
 
 "Machine learning is the study of computer algorithms that improve automatically through experience.
