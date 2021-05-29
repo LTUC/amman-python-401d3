@@ -5,11 +5,6 @@
 As computing resources become cheaper we can "train" our algorithms do make predictions or decisions without being explicitly  programmed to do do." - Wikipedia
 
 In the old days the the cost of computing power was prohibitive, so it was expensive to allow our algorithms to "learn by doing."
-
-## Learning Objectives
-
-### Students will be able to
-
 #### Describe and Define
 
 - Where Machine Learning fits in broader field of Artificial Intelligence.
@@ -24,4 +19,6 @@ In the old days the the cost of computing power was prohibitive, so it was expen
 
 ## Today's Outline
 
-<!-- To Be Completed By Instructor -->
+- Logistic Regression Lecture & Demo
+- Student Led Reviews
+- Lab
