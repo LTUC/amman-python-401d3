@@ -1,4 +1,7 @@
 #Homebrew
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/user/.zprofile
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+    
 if [ -f $(brew --prefix nvm)/etc/bash_completion.d/nvm ]; then
    source $(brew --prefix nvm)/etc/bash_completion.d/nvm
 fi
