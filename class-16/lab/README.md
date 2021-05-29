@@ -26,6 +26,7 @@ For this lab you'll be converting an excellent tutorial from a couple years ago.
 ## Setup
 
 - Create a `text-classifier` repository on GitHub
+- Name notebook `text_classifier.ipynb`
 
 ## Configuration
 
