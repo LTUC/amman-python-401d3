@@ -2,10 +2,6 @@
 
 Keeping secrets with Cryptography.
 
-## Learning Objectives
-
-### Students will be able to
-
 #### Describe and Define
 
 - Cryptography
@@ -21,4 +17,13 @@ Keeping secrets with Cryptography.
 
 ## Today's Outline
 
-<!-- To Be Completed By Instructor -->
+- Lab Review - Farah Web Scraping
+- DSA Questions
+- Lab Preview
+- Cryptography Lecture
+- Demo
+- Project
+
+## Notes
+
+## Resources
