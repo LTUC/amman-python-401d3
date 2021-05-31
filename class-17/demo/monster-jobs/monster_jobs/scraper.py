@@ -6,19 +6,20 @@ Walk through of https://realpython.com/beautiful-soup-web-scraper-python/
 # step 1
 ###############
 
-# import requests
+import requests
 
-# URL = 'https://www.monster.com/jobs/search/?q=Software-Developer&where=Australia'
-# page = requests.get(URL)
+URL = 'https://www.monster.com/jobs/search/?q=Software-Developer&where=Australia'
+# URL = 'http://web.archive.org/web/20210309041434/https://www.monster.com/jobs/search/?q=Software-Developer&where=Australia'
+page = requests.get(URL)
 
-# print(page.content)
+print(page.content)
 
 
 ###############
 # step 2
 ###############
 
-# # Move import to top of course
+# Move import to top of course
 # from bs4 import BeautifulSoup
 
 # soup = BeautifulSoup(page.content, 'html.parser')
@@ -28,7 +29,7 @@ Walk through of https://realpython.com/beautiful-soup-web-scraper-python/
 # step 3
 ###############
 
-# results = soup.find(id="ResultsContainer")
+# results = soup.find(id="SearchResults")
 
 # print(results.prettify())
 
@@ -37,7 +38,7 @@ Walk through of https://realpython.com/beautiful-soup-web-scraper-python/
 # step 4
 ###############
 
-# job_elems = results.find_all('section', class_='card-content')
+# job_elems = results.find_all('div', class_='summary')
 
 # print(job_elems)
 
@@ -54,16 +55,16 @@ Walk through of https://realpython.com/beautiful-soup-web-scraper-python/
 # step 6
 ###############
 
-# for job_elem in job_elems:
+for job_elem in job_elems:
 #     # Each job_elem is a new BeautifulSoup object.
 #     # You can use the same methods on it as you did before.
-#     title_elem = job_elem.find('h2', class_='title')
-#     company_elem = job_elem.find('div', class_='company')
-#     location_elem = job_elem.find('div', class_='location')
-#     print(title_elem)
-#     print(company_elem)
-#     print(location_elem)
-#     print()
+    # title_elem = job_elem.find('h2', class_='title')
+    # company_elem = job_elem.find('div', class_='company')
+    # location_elem = job_elem.find('div', class_='location')
+    # print(title_elem)
+    # print(company_elem)
+    # print(location_elem)
+    # print()
 
 ###############
 # step 7
@@ -116,11 +117,11 @@ Walk through of https://realpython.com/beautiful-soup-web-scraper-python/
 # # Move import to top of course
 # import re
 
-# # notice use of regular expression
+# # # notice use of regular expression
 # program_manager_jobs = results.find_all(string=re.compile('Program Manager'))
 # print('Program Manager jobs:', program_manager_jobs)
 
-# # below won't work because the text has trailing new lines
+# # # below won't work because the text has trailing new lines
 # program_manager_jobs_broken = results.find_all(string='Program Manager')
 # print('broken search', program_manager_jobs_broken)
 
@@ -131,17 +132,17 @@ Walk through of https://realpython.com/beautiful-soup-web-scraper-python/
 
 # can also pass in a function (in this case a lambda) as string argument
 
-# program_manager_jobs = results.find_all('h2',
-#                                string=lambda text: 'Program Manager' in text)
+# engineer_jobs = results.find_all('h2',
+#                                string=lambda text: 'Engineer' in text)
 
-# print('Count of Program Manager jobs:', len(program_manager_jobs))
+# print('Count of Engineer jobs:', len(engineer_jobs))
 
 
 ###############
 # step 12
 ###############
 
-# for p_job in python_jobs:
+# for p_job in engineer_jobs:
 #     link = p_job.find('a')['href']
 #     print(p_job.text.strip())
 #     print(f"Apply here: {link}\n")

@@ -89,3 +89,6 @@ In the old days the the cost of computing power was prohibitive, so it was expen
 - Logistic Regression Lecture & Demo Lab
 - Student Led Reviews [Maybe]
 
+## Resources
+
+https://en.wikipedia.org/wiki/Minkowski_distance
