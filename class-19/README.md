@@ -6,10 +6,6 @@ What might you want to automate? As much as possible of course!
 
 As a developer, if you find yourself doing the same manual steps repeatedly then stop for a second and think if the upfront cost of automation could pay off.
 
-## Learning Objectives
-
-### Students will be able to
-
 #### Describe and Define
 
 - Ways that Python can "automate the boring stuff"
@@ -24,4 +20,22 @@ As a developer, if you find yourself doing the same manual steps repeatedly then
 
 ## Today's Outline
 
-<!-- To Be Completed By Instructor -->
+- Lecture and Demo
+- Lab Preview
+- Lab Review
+
+## Notes
+
+What to automate?
+
+- Classifying downloaded files
+- Repetitive tasks
+  - Processing batch jobs or daily jobs
+  - Extracting structured data from unstructured data periodically
+- Run tests on each push / commit
+
+If I have to do something more than three times, I consider writing code for it.
+Some tasks are so fast to do that it may not be worth it if you don't do them often.
+Some tasks are difficult to automate so that process may not be worth it because it may take more time to automate than to do manually repeatedly
+
+
