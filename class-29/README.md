@@ -18,8 +18,9 @@ Some kinds of projects may have authentication requirements for which Django’s
 
 ## Today's Outline
 
-- [ ] Admin
-- [ ] Pitches, Aseel Muhannad
-- [ ] Review Noura
-- [ ] Demo and Prep
+- [x] Admin
+- [x] Pitches, Aseel Muhannad
+- [x] Student Questions
+- [x] Review
+- [x] Demo and Prep DjangoX, Templates, Snippets
 
