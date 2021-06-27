@@ -6,10 +6,6 @@ For that we need `Authentication`. There are lots of ways to authenticate. We wi
 
 We've recently moved to a production-grade database. But how about the server? Today we'll move beyond Django's built in development server to a "real" server - Gunicorn.
 
-## Learning Objectives
-
-### Students will be able to
-
 #### Describe and Define
 
 - Difference between Authorization and Authentication
@@ -19,9 +15,14 @@ We've recently moved to a production-grade database. But how about the server? T
 #### Execute
 
 - Integrate Gunicorn into Docker container
-- Request and refresh authentication tokens
+- Request and refresh authentication tokens 
 - Modify Django's default authentication classes
 
-## Today's Outline
+## Outline
 
-<!-- To Be Completed By Instructor -->
+ - [ ] Personal Pitch Class 34
+  - Raneem
+  - Hamzh
+- [x] Hashmap Review Manar
+- [ ] Django Rest Framework API Authentication w/ JWTs
+- [ ] Production prep Django + Docker
