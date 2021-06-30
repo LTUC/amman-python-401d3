@@ -4,10 +4,6 @@ Let's continue to deepen our understanding of ReactJS.
 
 Our goal is to start "thinking in React".
 
-## Learning Objectives
-
-### Students will be able to
-
 #### Describe and Define
 
 - Conditional rendering
@@ -22,4 +18,12 @@ Our goal is to start "thinking in React".
 
 ## Today's Outline
 
-<!-- To Be Completed By Instructor -->
+ - [x] Warm Up
+ - [x] Lab Review - Abed
+- [x] Mock Whiteboards
+  - reverseKGroups
+  - shiftLinkedList by k
+  - zip
+ - [x] React Build Out
+    - Conditional Rendering
+    - Efficient lists

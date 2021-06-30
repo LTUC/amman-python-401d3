@@ -1,56 +1,46 @@
 'use strict'
 
-import Head from 'next/head'
-import Link from 'next/link'
-
-import { useState } from 'react'
-import { replies } from '../data'
-import Header from '../components/header'
-import QuestionForm from '../components/question-form'
 import EightBall from '../components/eight-ball'
+import Head from 'next/head'
+import Header from '../components/header'
 import History from '../components/history'
+import Link from 'next/link'
+import QuestionForm from '../components/question-form'
+import { replies } from '../data'
+import { useState } from 'react'
 
 export default function Home() {
 
-        </div>
+  const [answeredQuestions, setAnsweredQuestions] = useState([]);
+
+  function questionAskedHandler(question) {
+
+      const reply = replies[Math.floor(Math.random() * replies.length)];
+
+      const answeredQuestion = {
+          id: answeredQuestions.length,
+          question,
+          reply,
+      }
+
+      setAnsweredQuestions([...answeredQuestions, answeredQuestion]);
+  }
+
+  return (
+      <div className="h-screen py-4 bg-gray-100">
+          <Head>
+              <title>Magic 8 Ball</title>
+              <link rel="icon" href="/favicon.ico" />
+          </Head>
+
+          <Header answerCount={answeredQuestions.length} />
+
+          <QuestionForm onAnswer={questionAskedHandler} />
+
+          <EightBall answeredQuestion={answeredQuestions[answeredQuestions.length - 1]} />
+
+          <History answeredQuestions={answeredQuestions} />
+
       </div>
-    )
-  }
-
-  function ResponseTable(props){
-    // console.log(props.answeredQuestionArray)
-    return(
-      <table className="w-1/2 mx-auto border-4 border-collapse border-gray-500">
-        <thead>
-          <tr>
-            <th className="pl-2 border border-black">No.</th>
-            <th className="pl-2 border border-black">Question</th>
-            <th className="pl-2 border border-black">Response</th>
-          </tr>
-        </thead>
-        <tbody>
-          {props.answeredQuestionArray.map(item =>{
-            <tr className="odd:bg-red-400" key={item.id}>
-              <td className="pl-2 border border-black">{item.id}</td>
-              <td className="pl-2 border border-black">{item.question}</td>
-              <td className="pl-2 border border-black">{item.reply}</td>
-            </tr>
-          })}
-        </tbody>
-      </table>
-    )
-  }
-
-  function Footer(props){
-    return(
-      <footer className="p-4 mt-8 bg-gray-500 text-gray-50">
-        <nav>
-          {/* <a href="careers">Careers</a> */}
-          <Link href="/careers">
-            <a>Careers</a>
-          </Link>
-        </nav>
-      </footer>
-    )
-  }
+  )
 }

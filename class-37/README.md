@@ -4,10 +4,6 @@ Django has the ability to render client side web pages nicely. But an increasing
 
 So it's time to dive back into JavaScript and learn React.
 
-## Learning Objectives
-
-### Students will be able to
-
 #### Describe and Define
 
 - Single Page Application (SPA)
@@ -23,6 +19,29 @@ So it's time to dive back into JavaScript and learn React.
 - Handle application state
 - Handle user input
 
-## Today's Outline
+## DSA Questions
+- Recursion *
+- Multiple Pointers *
+- Big O 
+    - Space ignore the input size
+    - focus on auxilary space used in the algorithm
+    -  Time  
+    - BFS Graph *
+    - With recursion, always add space for each recursive function call
 
-<!-- To Be Completed By Instructor -->
+Deque - Double Ended Queue
+
+FIFO
+
+add -> R ...  F <- remove
+
+  add, remove E ..... E add, remove
+
+  add, add E ..... E
+  remove, remove E ...... E
+
+  Simulate a stack
+
+  Graph traversal I might want to do BFS or DFS so if I have a Deque then I can use it as a stack or a queue depending on which traversal I need.
+
+
