@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Mock Kanafeh",
+        "description": "A really sweet thing",
+        "owner": 1
+    },
+    {
+        "id": 2,
+        "name": "Mock  Watermelon",
+        "description": "Free Palestine!",
+        "owner": 2
+    },
+    {
+        "id": 3,
+        "name": "Mock Potato",
+        "description": "It could be anything!",
+        "owner": 2
+    }
+]

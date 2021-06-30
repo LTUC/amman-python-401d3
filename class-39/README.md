@@ -10,15 +10,15 @@ Next.js is a framework that builds on top of React and can streamline many aspec
 - Fetch data at build time and run time
 
 ## Today's Outline
+- [ ] Deployment Options
 - [ ] React Fetching Data in React
-- [ ] Deployment
-- [ ] Be prepared for
+- [x] Be prepared for
  - 1 on 1s over next few days
  - Career Prep Today
  - Career Presentation Thursday
-- [ ] Lab 44 usually removed but I think you can benefit from it. Problem Solving and Root Case Analysis
+- [x] Lab 44 usually removed but I think you can benefit from it. Problem Solving and Root Case Analysis
     - This will also serve to give persons who are below 90 an opportunity to gain more grades to pass the course
-- [ ] Final Interviews
+- [x] Final Interviews
     - Order will be given over the weekend and early next week.
     - You do not get to choose your interviewer.
     - You camera and mic must be on so please find a way to get a quiet hour (if you are at work make preparations)
@@ -36,7 +36,7 @@ Next.js is a framework that builds on top of React and can streamline many aspec
      - Visualise a general case with gotchas, don't just choose one example of the problem because it may be an edge case and you can miss the general solution. Time management is key don't make it too hard but don't make it so easy you get it wrong
      - Understand the problem and figure out how to solve it by hand. This is your starting point for your algorithm
      - You don't need to write unit test code for how you would test, you can talk about what cases you would use and why they are good choices
-- [ ] Final Projects
+- [x] Final Projects
     - Next week you can start thinking about your project. You will use Django rest framework, React and TailwindCss or Headless UI (Formerly Tailwind UI)
     - This is a coding bootcamp so as usual each person must commit code to the project
     - If you commit most of the code to the project and let your teammates do non-coding tasks you will lose marks
